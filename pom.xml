@@ -18,7 +18,7 @@
 			</exclusions>
 		</dependency>
 		
-		 <!-- dependency>
+		 <dependency>
                 <groupId>org.seleniumhq.selenium</groupId>
                 <artifactId>selenium-server</artifactId>
                 <version>3.4.0</version>
@@ -33,7 +33,7 @@
 			<artifactId>testng</artifactId>
 			<version>6.11</version>
 			<scope>test</scope>
-		</dependency-->
+		</dependency>
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>
