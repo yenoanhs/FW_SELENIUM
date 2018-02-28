@@ -23,13 +23,13 @@ public class BasePage {
 	}
 
 
-	public void clickAction(WebElement element)
+	public void clickOnElement(WebElement element)
 	{
 		waitElement(element);
 		element.click();
 	}
 
-	public void setText(WebElement element, String str)
+	public void inputTextInElement(WebElement element, String str)
 	{
 		waitElement(element);
 		element.sendKeys(str);
