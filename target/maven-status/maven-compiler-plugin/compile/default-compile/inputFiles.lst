@@ -1,8 +1,8 @@
 E:\oanh\FW_SELENIUM\src\main\java\testbase\package-info.java
 E:\oanh\FW_SELENIUM\src\main\java\reports\package-info.java
-E:\oanh\FW_SELENIUM\src\main\java\testUnit\testUnitExcelFunc.java
-E:\oanh\FW_SELENIUM\src\main\java\customLibs\BasePage.java
 E:\oanh\FW_SELENIUM\src\main\java\customLibs\package-info.java
+E:\oanh\FW_SELENIUM\src\main\java\pages\BasePage.java
+E:\oanh\FW_SELENIUM\src\main\java\testbase\TestBase.java
 E:\oanh\FW_SELENIUM\src\main\java\log\package-info.java
 E:\oanh\FW_SELENIUM\src\main\java\customLibs\ExcelUtils.java
 E:\oanh\FW_SELENIUM\src\main\java\screenshot\package-info.java
