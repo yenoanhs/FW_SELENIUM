@@ -48,8 +48,7 @@ public class TestBase {
 			} else if (browserName.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver", userDir + "/drviers/chromedirver.exe");
 			}
-		}
-		else if (System.getProperty("os.name").contains("Mac")){
+		} else if (System.getProperty("os.name").contains("Mac")) {
 			if (browserName.equalsIgnoreCase("firefox")) {
 				System.setProperty("webdriver.gecko.driver", userDir + "/drivers/geckodriver");
 				driver = new FirefoxDriver();
@@ -60,31 +59,32 @@ public class TestBase {
 	}
 
 	// take screen shot
-	public String getScreenShot(String imageName) throws IOException{
-		if (imageName.equals("")){
-			imageName="_blank";
+	public String getScreenShot(String imageName) throws IOException {
+		if (imageName.equals("")) {
+			imageName = "_blank";
 		}
-		File image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String imageLocation = userDir +"/src/main/java/screenshot/"		;
+		File image = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		String imageLocation = userDir + "/src/main/java/screenshot/";
 		Calendar calendar = Calendar.getInstance();
 		SimpleDateFormat format = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
-		String actualImageName =imageLocation+"_"+format.format(calendar.getTime())+".png";
+		String actualImageName = imageLocation + "_" + format.format(calendar.getTime()) + ".png";
 		File desFile = new File(actualImageName);
 		FileUtils.copyFile(image, desFile);
 
 		return actualImageName;
 	}
 
-	public void getresult(ITestResult result) throws IOException{
-		if (result.getStatus()==ITestResult.SUCCESS){
+	public void getresult(ITestResult result) throws IOException {
+		if (result.getStatus() == ITestResult.SUCCESS) {
 			test.log(LogStatus.PASS, result.getName() + " test is passed");
-		}else if (result.getStatus()==ITestResult.SKIP){
-			test.log(LogStatus.SKIP, result.getName() + " test is skipped and skip reason is: "+result.getThrowable());
-		}else if (result.getStatus()==ITestResult.FAILURE ){
-			test.log(LogStatus.FAIL, result.getName()+" test is failed. Reason is " + result.getThrowable());
+		} else if (result.getStatus() == ITestResult.SKIP) {
+			test.log(LogStatus.SKIP,
+					result.getName() + " test is skipped and skip reason is: " + result.getThrowable());
+		} else if (result.getStatus() == ITestResult.FAILURE) {
+			test.log(LogStatus.FAIL, result.getName() + " test is failed. Reason is " + result.getThrowable());
 			String screen = getScreenShot("");
 			test.log(LogStatus.FAIL, test.addScreenCapture(screen));
-		}else if (result.getStatus()==ITestResult.STARTED){
+		} else if (result.getStatus() == ITestResult.STARTED) {
 			test.log(LogStatus.INFO, result.getName() + " test is started");
 		}
 
