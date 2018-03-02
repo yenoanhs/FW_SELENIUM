@@ -1,13 +1,20 @@
 package testUnit;
 
-import customLibs.ExcelUtils;
+import org.testng.annotations.Test;
 
-public class testUnitExcelFunc {
+import customLibs.ExcelUtils;
+import testbase.TestBase;
+
+public class testUnitExcelFunc extends TestBase{
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
+		System.out.println("test unit");
+	}
 
-		String filepath="E:/oanh/FW_SELENIUM/src/test/resources/testData.xlsx";
+	@Test()
+	public void testGetDataInExcel(){
+		String filepath="E:/oanh/FW_SELENIUM/src/test/testData.xlsx";
 		String sheetname="Sheet1";
 		ExcelUtils oExcel = new ExcelUtils(filepath, sheetname);
 		int numberRow =oExcel.getRowCount();
@@ -23,5 +30,15 @@ public class testUnitExcelFunc {
 
 	}
 
+	@Test()
+	public void testStart(){
+		String str="test";
+		assert "message".equals(str);
+	}
 
+	@Test(dependsOnMethods ={"testStart"})
+	public void test(){
+		String str="test";
+		assert "message".equals(str);
+	}
 }
