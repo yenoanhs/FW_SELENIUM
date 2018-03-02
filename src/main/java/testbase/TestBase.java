@@ -11,11 +11,13 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -47,17 +49,19 @@ public class TestBase {
 	public void initBrowser(String browserName) {
 		if (System.getProperty("os.name").contains("Window")) {
 			if (browserName.equalsIgnoreCase("firefox")) {
-				System.setProperty("webdriver.gecko.driver", userDir + "/drivers/geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", userDir + "/src/main/resources/driver/geckodriver.exe");
 				driver = new FirefoxDriver();
 			} else if (browserName.equalsIgnoreCase("chrome")) {
-				System.setProperty("webdriver.chrome.driver", userDir + "/drviers/chromedirver.exe");
+				System.setProperty("webdriver.chrome.driver", userDir + "/src/main/resources/driver/chromedriver.exe");
+				driver = new ChromeDriver();
 			}
 		} else if (System.getProperty("os.name").contains("Mac")) {
 			if (browserName.equalsIgnoreCase("firefox")) {
-				System.setProperty("webdriver.gecko.driver", userDir + "/drivers/geckodriver");
+				System.setProperty("webdriver.gecko.driver", userDir + "/src/main/resources/driver/geckodriver");
 				driver = new FirefoxDriver();
 			} else if (browserName.equalsIgnoreCase("chrome")) {
-				System.setProperty("webdriver.chrome.driver", userDir + "/drviers/chromedirver");
+				System.setProperty("webdriver.chrome.driver", userDir + "/src/main/resources/driver/chromedriver");
+				driver = new ChromeDriver();
 			}
 		}
 	}
@@ -111,5 +115,14 @@ public class TestBase {
 		//driver.quit();
 		extent.endTest(test);
 		extent.flush();
+	}
+
+	@Test()
+	public void testOpenBrower(){
+		initBrowser("chrome");
+		driver.get("https://tiki.vn/");
+		String str = driver.getTitle();
+		System.out.println("title = "+str);
+		assert "test".equals(str);
 	}
 }

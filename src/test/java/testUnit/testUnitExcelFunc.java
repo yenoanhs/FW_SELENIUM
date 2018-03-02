@@ -41,4 +41,6 @@ public class testUnitExcelFunc extends TestBase{
 		String str="test";
 		assert "message".equals(str);
 	}
+
+
 }

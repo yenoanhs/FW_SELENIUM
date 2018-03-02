@@ -1,43 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" ignored="0" total="3" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="702" started-at="2018-03-02T03:41:31Z" finished-at="2018-03-02T03:41:32Z">
+  <suite name="Default suite" duration-ms="9516" started-at="2018-03-02T08:28:56Z" finished-at="2018-03-02T08:29:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="702" started-at="2018-03-02T03:41:31Z" finished-at="2018-03-02T03:41:32Z">
-      <class name="testUnit.testUnitExcelFunc">
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testUnit.testUnitExcelFunc@1e67a849]" name="beforeMethod" is-config="true" duration-ms="7" started-at="2018-03-02T10:41:31Z" finished-at="2018-03-02T10:41:31Z">
+    <test name="Default test" duration-ms="9516" started-at="2018-03-02T08:28:56Z" finished-at="2018-03-02T08:29:05Z">
+      <class name="testbase.TestBase">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testbase.TestBase@2ea6137]" name="beforeMethod" is-config="true" duration-ms="6" started-at="2018-03-02T15:28:56Z" finished-at="2018-03-02T15:28:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void testUnit.testUnitExcelFunc.testGetDataInExcel()]]>
+                <![CDATA[public void testbase.TestBase.testOpenBrower()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testGetDataInExcel()[pri:0, instance:testUnit.testUnitExcelFunc@1e67a849]" name="testGetDataInExcel" duration-ms="418" started-at="2018-03-02T10:41:31Z" finished-at="2018-03-02T10:41:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetDataInExcel -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testUnit.testUnitExcelFunc@1e67a849]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-02T10:41:31Z" finished-at="2018-03-02T10:41:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testUnit.testUnitExcelFunc.testStart()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="testStart()[pri:0, instance:testUnit.testUnitExcelFunc@1e67a849]" name="testStart" duration-ms="1" started-at="2018-03-02T10:41:31Z" finished-at="2018-03-02T10:41:31Z">
+        <test-method status="FAIL" signature="testOpenBrower()[pri:0, instance:testbase.TestBase@2ea6137]" name="testOpenBrower" duration-ms="8756" started-at="2018-03-02T15:28:56Z" finished-at="2018-03-02T15:29:05Z">
           <exception class="java.lang.AssertionError">
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError
-	at testUnit.testUnitExcelFunc.testStart(testUnitExcelFunc.java:36)
+	at testbase.TestBase.testOpenBrower(TestBase.java:126)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -68,101 +53,23 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testStart -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testUnit.testUnitExcelFunc@1e67a849]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-02T10:41:31Z" finished-at="2018-03-02T10:41:31Z">
+        </test-method> <!-- testOpenBrower -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testbase.TestBase@2ea6137]" name="afterMethod" is-config="true" duration-ms="522" started-at="2018-03-02T15:29:05Z" finished-at="2018-03-02T15:29:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testGetDataInExcel status=SUCCESS method=testUnitExcelFunc.testGetDataInExcel()[pri:0, instance:testUnit.testUnitExcelFunc@1e67a849] output={null}]]]>
+                <![CDATA[[TestResult name=testOpenBrower status=FAILURE method=TestBase.testOpenBrower()[pri:0, instance:testbase.TestBase@2ea6137] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="FAIL" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testUnit.testUnitExcelFunc@1e67a849]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-02T10:41:31Z" finished-at="2018-03-02T10:41:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testStart status=FAILURE method=testUnitExcelFunc.testStart()[pri:0, instance:testUnit.testUnitExcelFunc@1e67a849] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at testbase.TestBase.getScreenShot(TestBase.java:70)
-	at testbase.TestBase.getresult(TestBase.java:89)
-	at testbase.TestBase.afterMethod(TestBase.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="test()[pri:0, instance:testUnit.testUnitExcelFunc@1e67a849]" name="test" duration-ms="0" started-at="2018-03-02T10:41:31Z" depends-on-methods="testUnit.testUnitExcelFunc.testStart" finished-at="2018-03-02T10:41:31Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method testUnitExcelFunc.test()[pri:0, instance:testUnit.testUnitExcelFunc@1e67a849] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method testUnitExcelFunc.test()[pri:0, instance:testUnit.testUnitExcelFunc@1e67a849] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:testUnit.testUnitExcelFunc@1e67a849]" name="endTest" is-config="true" duration-ms="207" started-at="2018-03-02T10:41:31Z" finished-at="2018-03-02T10:41:32Z">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:testbase.TestBase@2ea6137]" name="endTest" is-config="true" duration-ms="214" started-at="2018-03-02T15:29:05Z" finished-at="2018-03-02T15:29:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-      </class> <!-- testUnit.testUnitExcelFunc -->
+      </class> <!-- testbase.TestBase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
