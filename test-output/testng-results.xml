@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9516" started-at="2018-03-02T08:28:56Z" finished-at="2018-03-02T08:29:05Z">
+  <suite name="Default suite" duration-ms="8936" started-at="2018-03-05T10:53:02Z" finished-at="2018-03-05T10:53:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9516" started-at="2018-03-02T08:28:56Z" finished-at="2018-03-02T08:29:05Z">
+    <test name="Default test" duration-ms="8936" started-at="2018-03-05T10:53:02Z" finished-at="2018-03-05T10:53:11Z">
       <class name="testbase.TestBase">
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testbase.TestBase@2ea6137]" name="beforeMethod" is-config="true" duration-ms="6" started-at="2018-03-02T15:28:56Z" finished-at="2018-03-02T15:28:56Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testbase.TestBase@2ea6137]" name="beforeMethod" is-config="true" duration-ms="7" started-at="2018-03-05T17:53:02Z" finished-at="2018-03-05T17:53:02Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="testOpenBrower()[pri:0, instance:testbase.TestBase@2ea6137]" name="testOpenBrower" duration-ms="8756" started-at="2018-03-02T15:28:56Z" finished-at="2018-03-02T15:29:05Z">
+        <test-method status="FAIL" signature="testOpenBrower()[pri:0, instance:testbase.TestBase@2ea6137]" name="testOpenBrower" duration-ms="8137" started-at="2018-03-05T17:53:02Z" finished-at="2018-03-05T17:53:10Z">
           <exception class="java.lang.AssertionError">
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError
@@ -54,7 +54,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenBrower -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testbase.TestBase@2ea6137]" name="afterMethod" is-config="true" duration-ms="522" started-at="2018-03-02T15:29:05Z" finished-at="2018-03-02T15:29:05Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testbase.TestBase@2ea6137]" name="afterMethod" is-config="true" duration-ms="556" started-at="2018-03-05T17:53:10Z" finished-at="2018-03-05T17:53:11Z">
           <params>
             <param index="0">
               <value>
@@ -65,7 +65,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:testbase.TestBase@2ea6137]" name="endTest" is-config="true" duration-ms="214" started-at="2018-03-02T15:29:05Z" finished-at="2018-03-02T15:29:05Z">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:testbase.TestBase@2ea6137]" name="endTest" is-config="true" duration-ms="217" started-at="2018-03-05T17:53:11Z" finished-at="2018-03-05T17:53:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
