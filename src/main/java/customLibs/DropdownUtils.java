@@ -3,17 +3,10 @@ package customLibs;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 public class DropdownUtils {
-
-	WebDriver driver;
-
-	public DropdownUtils(WebDriver driver) {
-		this.driver = driver;
-	}
 
 	public void selectByValue(WebElement element, String str) {
 		Select select = new Select(element);
