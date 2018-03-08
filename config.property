@@ -1,0 +1,4 @@
+browser=chrome 
+# firefox
+
+testDataUnit=E:/oanh/FW_SELENIUM/src/test/testData.xlsx

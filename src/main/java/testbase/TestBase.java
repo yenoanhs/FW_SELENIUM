@@ -1,5 +1,7 @@
 package testbase;
 
+import static customLibs.Globals.PROP;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -17,6 +19,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -116,6 +119,11 @@ public class TestBase {
 		extent.flush();
 	}
 
+	@BeforeTest
+	public void loadBrowser()
+	{
+		initBrowser(PROP.getProperty("browser"));
+	}
 //	@Test()
 //	public void testOpenBrower(){
 //		initBrowser("chrome");
